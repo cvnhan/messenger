@@ -1,0 +1,68 @@
+@charset "utf-8";
+.blocka{
+	clear:both;
+	display:block;
+	margin-left:10px;
+	margin-right:50px;
+}
+.blocka .left{
+	float:left;
+}
+.blocka .left img {
+	width:50px;
+	height:50px;
+}
+.blocka .right{
+	float:right;
+	width:140px;
+	height:auto;
+	padding:0px;
+	border: 40px solid transparent;
+/*-moz-border-image: url(chatnew.png) 30 round;
+-webkit-border-image: url(chatnew.png) 30 round;
+-o-border-image: url(chatnew.png) 30 round;*/
+border-image: url(img/chatnew.png) 40 fill round;
+
+}
+
+.content{
+	width:auto;
+	height:auto;
+}
+.blocka .right .title{
+	width:auto;
+	height:auto;
+	margin-top:-25px;
+	margin-left:-20px;
+}
+.blocka .content img{
+	width:208px;
+	height:150px;
+	margin-bottom:-41px;
+	margin-left:-29px;
+-moz-border-radius: 0px 0px 30px 30px;
+border-radius: 0px 0px 30px 30px;
+}
+
+.blockb{
+	margin-left:150px;
+	clear:both;
+	display:block;
+	margin-right:20px;
+}
+.blockb td {
+    height: 50px;
+    vertical-align: bottom;
+}
+.blockb .left{
+	float:left;
+	width:140px;
+	height:auto;
+	border: 40px solid transparent;
+border-image: url(img/chatuser.png) 40 fill round;
+}
+.blockb .right img{
+	width:50px;
+	height:50px;
+}
+

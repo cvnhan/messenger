@@ -1,0 +1,84 @@
+<!-- chat.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Messenger</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        <style>
+        * { font-family:tahoma; font-size:12px; padding:0px; margin:0px; }
+        p { line-height:18px; }
+        section { width:460px; margin-left:auto; margin-right:auto;}
+		section:first-of-type { padding:5px; background:#ddd; border-radius:5px;
+                   border:1px solid #CCC; margin-top:10px; overflow:hidden; position:relative; }
+		footer{width:460px; margin-left:auto; margin-right:auto;}
+        #input {
+			 border-radius:2px; border:1px solid #ccc;
+                 margin-top:10px; margin-bottom:20px; padding:5px; width:450px;height:20px;  }
+        #status { width:88px; display:block; float:left; margin-top:15px; height:30px; text-align:center;}
+        #content{  margin-left: auto ;  margin-right: auto ; }
+        section:first-of-type {  }
+        .viewport { z-index:0; overflow: hidden; position: relative; min-height:450px; height:100%; padding-bottom:50px;}
+		.overview { list-style:none; position:absolute; left:0; top:0; width:100%; }
+		.scrollbar { position:absolute; left:600px; }
+		div.hover .thumb { background-color:#C9E8ED !important; opacity:1 !important; }
+		.track { z-index:0; position: relative; }
+		.thumb {
+			z-index: 0;
+			 /*display:none;*/ opacity:0.2; cursor:pointer; overflow:hidden; position:absolute; top:0; left:0; border-radius:7px; background-color:black; }
+		.thumb:hover { background-color:#98D1DC !important; opacity:1 !important; }
+		.thumb .end { overflow:hidden; height:5px; width:7px; }
+		.disable { display:none !important; }
+		.disable * { display:none; }
+        </style>
+        <script type="text/javascript">
+		  $(document).ready(function() {
+			  $('body').css('touch-action', 'auto');
+		  });
+		</script>
+    </head>
+    <body style="position: relative; min-height: 100%; top: 0px;">
+        <section>
+			<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+			<div class="viewport">
+	            <div class="overviewz" id="content">
+                <p><table class="blocka" >
+                <tr>
+                    <td class="left">
+                    <img src="img/testleft.png">
+                    </td>
+                    <td class="right">
+                    <div class="title">
+                    14-47-26:
+                    <span style="color:#C9E8ED">merchant</span> @:<br>
+                    <h1>Hi</h1>
+
+<p><u>This<span style="color:#00FF00"> </span></u><span style="color:#FF0000">is a</span> <strong>sample </strong><em>about </em><span style="color:#FFFF00">showing</span> html<img alt="crying" src="http://cdn.ckeditor.com/4.4.7/standard-all/plugins/smiley/images/cry_smile.png" style="height:23px; width:23px" title="crying" /><img alt="enlightened" src="http://cdn.ckeditor.com/4.4.7/standard-all/plugins/smiley/images/lightbulb.png" style="height:23px; width:23px" title="enlightened" /><img alt="surprise" src="http://cdn.ckeditor.com/4.4.7/standard-all/plugins/smiley/images/omg_smile.png" style="height:23px; width:23px" title="surprise" /><img alt="heart" src="http://cdn.ckeditor.com/4.4.7/standard-all/plugins/smiley/images/heart.png" style="height:23px; width:23px" title="heart" /><img alt="kiss" src="http://cdn.ckeditor.com/4.4.7/standard-all/plugins/smiley/images/kiss.png" style="height:23px; width:23px" title="kiss" /><img alt="indecision" src="http://cdn.ckeditor.com/4.4.7/standard-all/plugins/smiley/images/whatchutalkingabout_smile.png" style="height:23px; width:23px" title="indecision" /><img alt="yes" src="http://cdn.ckeditor.com/4.4.7/standard-all/plugins/smiley/images/thumbs_up.png" style="height:23px; width:23px" title="yes" /></p>
+
+                    </div>
+                    <div class="content">
+                    <img src="img/test.jpg">
+                    </div>
+                    </td>
+                </tr>
+                </table></p>
+	            </div>
+			</div>
+		</section>
+    <center><input type="image" id="inputtest" src="img/test.jpg" alt="Submit" width="60" height="50"/>
+			<input type="image" id="inputtest1" src="img/test1.jpg" alt="Submit" width="60" height="50"/>
+            <input type="image" id="inputtest2" src="img/test2.jpg" alt="Submit" width="60" height="50"/>
+            <input type="image" id="inputtest3" src="img/test3.jpg" alt="Submit" width="60" height="50"/></center>
+        <footer>
+	        <br>
+            <span id="status">Connecting...</span>
+            <input type="text" id="input" disabled="disabled" /><br>
+            
+        </footer>
+		<p/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script src="jquery.tinyscrollbar.js"></script>
+        <script src="frontend.js"></script>
+    </body>
+</html>

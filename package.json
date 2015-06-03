@@ -1,0 +1,18 @@
+{
+  "name": "messenger",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cvnhan/messenger.git"
+  },
+  "dependencies": {
+    "websocket": "^1.0.18",
+    "express": "^4.8.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node chat-server.js"
+  }
+}
