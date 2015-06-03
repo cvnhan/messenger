@@ -16,3 +16,4 @@
 =========================================
 useful command:
 - git remote -v
+- heroku restart
